@@ -1,6 +1,6 @@
 package com.hoppr.app.ddd.service;
 
-import io.dragee.annotation.ddd.DDD;
+import io.fixentropy.annotation.ddd.DDD;
 import com.hoppr.app.ddd.aggregate.Order;
 import com.hoppr.app.ddd.command.CreateOrder;
 import com.hoppr.app.ddd.event.OrderCreated;
