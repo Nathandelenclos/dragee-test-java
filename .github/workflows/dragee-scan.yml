@@ -53,6 +53,6 @@ jobs:
       - name: Dragee Scan
         uses: fixentropy-io/fixentropy-scan-action@v0.0.4
         with:
-          from: '/target/dragee/'
+          from: '/target/fixentropy/'
           github-token: ${{ secrets.GITHUB_TOKEN }}
           backend-url: ${{ env.DRAGEE_BACKEND_URL }}
