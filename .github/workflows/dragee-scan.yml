@@ -51,8 +51,8 @@ jobs:
         run: mvn clean install
 
       - name: Dragee Scan
-#        uses: dragee-io/dragee-scan-action@v1
-        uses: "./.github/actions/dragee-scan"
+        uses: fixentropy-io/fixentropy-scan-action@v0.0.1
+#        uses: "./.github/actions/dragee-scan"
         with:
           from: '/target/dragee/'
           github-token: ${{ secrets.GITHUB_TOKEN }}
