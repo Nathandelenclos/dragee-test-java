@@ -1,4 +1,4 @@
-name: Try Action
+name: Fixentropy Scan
 
 on:
   push:
