@@ -10,7 +10,7 @@ permissions:
   contents: read
 
 env:
-  FIXENTROPY_BACKEND_URL: "https://unmentholated-misti-prevalid.ngrok-free.dev"
+  FIXENTROPY_BACKEND_URL: "https://app-dev.fixentropy.io/api"
 
 jobs:
   fixentropy-scan:
