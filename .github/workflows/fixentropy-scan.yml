@@ -51,8 +51,6 @@ jobs:
         run: mvn clean install
 
       - name: Fixentropy Scan
-        uses: fixentropy-io/fixentropy-scan-action@v0.0.5
+        uses: fixentropy-io/fixentropy-scan-action@v0.0.7
         with:
-          from: '/target/fixentropy/'
-          github-token: ${{ secrets.GITHUB_TOKEN }}
           backend-url: ${{ env.FIXENTROPY_BACKEND_URL }}
