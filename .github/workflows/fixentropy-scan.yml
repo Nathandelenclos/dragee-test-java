@@ -51,6 +51,6 @@ jobs:
         run: mvn clean install
 
       - name: Fixentropy Scan
-        uses: fixentropy-io/fixentropy-scan-action@v0.0.8
+        uses: fixentropy-io/fixentropy-scan-action@v0.0.9
         with:
           backend-url: ${{ env.FIXENTROPY_BACKEND_URL }}
