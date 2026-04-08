@@ -1,8 +1,8 @@
 package com.hoppr.app.hexagonal.domain.service;
 
 import io.fixentropy.annotation.hexagonal.Hexagonal;
+import com.hoppr.app.hexagonal.adapter.outbound.InMemoryProductRepository;
 import com.hoppr.app.hexagonal.domain.entity.Product;
-import com.hoppr.app.hexagonal.port.outbound.ProductRepository;
 
 import java.math.BigDecimal;
 import java.util.Objects;
@@ -10,9 +10,9 @@ import java.util.UUID;
 
 @Hexagonal.DomainService
 public class ProductService {
-    private final ProductRepository repository;
+    private final InMemoryProductRepository repository;
 
-    public ProductService(ProductRepository repository) {
+    public ProductService(InMemoryProductRepository repository) {
         this.repository = Objects.requireNonNull(repository);
     }
 

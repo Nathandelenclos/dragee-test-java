@@ -1,6 +1,7 @@
 package com.hoppr.app.hexagonal.port.outbound;
 
 import io.fixentropy.annotation.hexagonal.Hexagonal;
+import com.hoppr.app.hexagonal.adapter.outbound.InMemoryProductRepository;
 import com.hoppr.app.hexagonal.domain.entity.Product;
 
 import java.util.Optional;
@@ -11,4 +12,8 @@ public interface ProductRepository {
     void save(Product product);
 
     Optional<Product> findById(UUID id);
+
+    default InMemoryProductRepository leakedAdapterDependency(InMemoryProductRepository adapter) {
+        return adapter;
+    }
 }
